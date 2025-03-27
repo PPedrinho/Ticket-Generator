@@ -1,2 +1,3 @@
 # Ticket Generator
- Rep
+ Repositório destinado para o Gerador de Tickets - Desenvolvimento FullStack
+ 
