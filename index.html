@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/imgs/favicon-32x32.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Gerador de Ingressos para Conferência</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/imgs/logo-full.svg" alt="logo" />
+    </header>
+    <main>
+      <section class="first-section">
+        <h1>Sua Jornada para a Coding Conf 2025 Começa Aqui!</h1>
+        <p>Garanta seu lugar na maior conferência de programação do próximo ano</p>
+
+        <form action="#" id="form">
+          <div id="upload-group">
+            <p class="upload-text">Enviar Avatar</p>
+            <label for="upload-label" id="label">
+              <input type="file" id="upload-label" name="avatar" accept="image/png, image/jpeg, image/jpg"/>
+              <div id="upload-content">
+                <span class="img-container">
+                  <img src="./assets/imgs/icon-upload.svg" alt="ícone de upload" id="upload-icon"/>
+                  <img src="./assets/imgs/image-avatar.jpg"alt="avatar" id="uploaded-img" />
+                </span>
+
+                <span class="btn-container">
+                  <button type="button" class="remove-btn">Remover Imagem</button>
+                  <button type="button" class="change-btn">Alterar Imagem</button>
+                </span>
+              </div>
+              <p class="drag-text">Arraste e solte ou clique para enviar</p>
+            </label>
+            <div class="warning-text">
+              <div class="size-warning">
+                <img src="./assets/imgs/icon-info.svg" alt="ícone de informação"/> 
+                <small>Envie sua foto (JPG ou PNG, tamanho máximo: 500KB).</small>
+              </div>
+              <div class="error">
+                <img src="./assets/imgs/icon-info.svg" alt="ícone de informação"/>
+                <small>Arquivo muito grande. Envie uma foto com menos de 500KB.</small>
+              </div>
+            </div>
+          </div>
+
+          <label for="full-name">Nome Completo</label>
+          <input type="text" id="full-name" name="full-name" />
+          <small class="error-warning">Nome completo é obrigatório</small>
+
+          <label for="email">Endereço de Email</label>
+          <input type="email" id="email" name="email" />
+          <small class="error-warning">Por favor, insira um email válido</small>
+
+          <label for="github-username">Nome de Usuário no GitHub</label>
+          <input type="text" id="github-username" name="github-username" />
+          <small class="error-warning">Nome de usuário é obrigatório</small>
+
+          <button type="submit" id="submit-btn">Gerar Meu Ingresso</button>
+        </form>
+      </section>
+      <section class="second-section">
+        <h2>
+          Parabéns, <span class="nameValue"></span>! Seu ingresso está pronto.
+        </h2>
+        <p class="notify">
+          Enviamos seu ingresso por email para
+          <span class="emailValue"></span> e enviaremos atualizações
+          conforme a data do evento se aproxima.
+        </p>
+        <div class="ticket">
+          <img src="./assets/imgs/pattern-ticket.svg" alt="ingresso" />
+
+          <div class="ticket-content">
+            <div class="first-part">
+              <div class="logo">
+                <img src="./assets/imgs/logo-full.svg" alt="logo" />
+              </div>
+                <p class="time"><span class="dot">31 de Janeiro de 2025</span> / Austin, TX</p>
+
+                <div class="personal">
+                  <img class="avatar" src="./assets/imgs/image-avatar.jpg" alt="avatar">
+                  <span class="info">
+                    <p class="name"></p>
+                    <p class="github">
+                      <img src="./assets/imgs/icon-github.svg" alt="ícone do GitHub">@<span class="githubUsernameValue"></span>
+                    </p>
+                  </span>
+                </div>
+            </div>
+            <div class="second-part">
+              <p class="ticket-number">#01609</p>
+            </div>
+          </div>
+        </div>
+        <button id="reset-btn" >Preencher Novamente</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
