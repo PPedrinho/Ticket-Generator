@@ -59,6 +59,25 @@
           margin: auto;
         }
       }
+
+      .second-section {
+        h1 {
+          margin: 0;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+
+        form {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+      
     }
   }
 }
@@ -94,6 +113,23 @@
         }
       }
 
+      .second-section {
+        h1 {
+          margin: 0;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+
+        form {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
